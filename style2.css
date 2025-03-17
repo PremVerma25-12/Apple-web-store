@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    width: 100%;
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    background-color: whitesmoke;
+}
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#navbar ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    color: rgb(250,127,90);
+    
+}
+#navbar .icon {
+    display: flex;
+    gap: 50px;
+    
+}
+#navbar .icon a{
+    color: black;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+#navbar .call{
+    display: flex;
+    white-space: nowrap;
+    gap: 5%;
+    border: 1px solid black;
+    color: aliceblue;
+    background-color: rgb(250,127,90);
+    padding: 5px 10px;
+    border-radius: 20px ;
+}
+ 
+/* home setion css */
+
+#home{
+    width: 100%;
+    border: 1px solid black ;
+    height: 100vh ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120px ;
+}
+
+#home img {
+    position: absolute;
+    width: 50% ;
+}
+
+
+.box1{
+height: 40vh;
+width: 400px;
+border: 1px solid;
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+animation: move 5s ease-in-out infinite;
+}
+
+
+@keyframes move {
+    0% {
+        background-color: aqua;
+    }
+    25% {
+       background-color:gray;
+       border-radius:50%;
+       transition:translateX(-200px);
+    }
+    50%{
+        background-color: yellow;
+        border-radius:0%;
+        background-image: url(images/commentor-item1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75% {
+        background-color: blue;
+        border-radius:50% ;
+        box-shadow: 20px 20px 2px;
+        transform: translateX(200px);
+    }
+}
+
+
+
+@media (max-width: 430px){
+    
+}
